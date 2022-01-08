@@ -1,0 +1,7 @@
+use('sample_airbnb')
+
+
+db.listingsAndReviews.find({
+  last_scraped : {$gte : new Date('2019-02-11'), $lte : new Date('2019-02-20')}
+}).limit(1);
+// db.movies.find({}, {title : 1, fullplot : 1}).limit(10);
