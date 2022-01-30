@@ -9,6 +9,7 @@ services:
     volumes:
       - ./test-app:/app
       - /app/node_modules
+  
   nginx:
     image: nginx
     ports:

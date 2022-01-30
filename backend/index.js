@@ -75,6 +75,6 @@ app.use("/api/v1/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use("/api/v1/post", postRouter);
 app.use("/api/v1/user", userRouter);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => console.log(`Express App listening on port ${port}`));
